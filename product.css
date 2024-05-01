@@ -1,0 +1,10 @@
+
+body{
+    background: linear-gradient(rgba(0,0,0,0.5),#009682),url(PDS-LS-03_1600x.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+        position: absolute;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        align-content: center;
+}

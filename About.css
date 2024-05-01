@@ -1,0 +1,39 @@
+body{
+    background: linear-gradient(rgba(0,0,0,0.5),#009682),url(PDS-LS-03_1600x.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+        position: absolute;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+
+    }
+    h1{
+    text-align: center;
+    color:peachpuff ;
+    font-size: 120px;
+    }
+    p{
+        text-align: center;
+        font-size: 70px;
+        color: aliceblue;
+    }
+    h4{
+        text-align: center;
+        color:peachpuff ;
+        font-size: 120px;
+        }
+        h5{
+            text-align: center;
+            color:peachpuff ;
+            font-size: 120px;   
+        }
+        h2{
+            text-align: center;
+            color:peachpuff ;
+            font-size: 120px;  
+        }
+        h3{
+            text-align: center;
+    color:peachpuff ;
+    font-size: 120px;
+        }

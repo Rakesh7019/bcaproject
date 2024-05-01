@@ -1,0 +1,12 @@
+h1{ color: blue;text-align: center;font-size: 100px;}
+h2{color:peachpuff;text-align: center;font-size: 90px;}
+
+p{color:white;text-align: center;font-size:50px;}
+body{
+background: linear-gradient(rgba(0,0,0,0.5),#009682),url(PDSRO-Sec-01_1600x.png);
+    background-size: 100% 100%;
+    background-position: center;
+    position: absolute;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}

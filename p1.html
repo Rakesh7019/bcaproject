@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="p1.css">
+    link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@200&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <section id="leaf">
+        <img src="logo.jpg" class="logo">
+        <div class="leaf-text">
+            <h1>ARECA  LEAF</h1>
+            <P>GO WITH ECO FRIENDLY</P>
+            <h6>CUSTOMER IS LIKE <br><span>"GOD"</span> <br>WE ARE NOT SUCH A GREAT PERSON TO GIVE CREDIT TO<br><span>"GOD"</span><br></h6>
+        </div>
+
+    </section>
+    <div id="sideNav">
+        <nav>
+            <ul>
+                <li><a href="home.html">HOME</a></li>
+                <li><a href="product.html">PRODUCTS</a></li>
+                <li><a href="login.html">LOGIN</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+                <li><a href="About.html">ABOUT</a></li>
+                <li><a href="admin.html">ADMIN</a></li>
+                <li><a href="check.html">CHECK</a></li>
+                
+                
+            </ul>
+        </nav>
+          
+    </div>
+    <div id="menuBtn">
+        <img src="menu.png" id="menu">
+    </div>
+
+    <script>
+        var menuBtn = document.getElementById("menuBtn")
+        var sideNav = document.getElementById("sideNav")
+        var menu = document.getElementById("menu")
+        sideNav.style.right="-250px"
+        menuBtn.onclick=function(){
+            if(sideNav.style.right=="-250px"){
+
+                sideNav.style.right="0";
+                menu.src="close.png"
+            }
+            else{
+                sideNav.style.right="-250px"
+                menu.src="menu.png"
+            }
+        }
+    </script>
+</body>
+    
+    </html>

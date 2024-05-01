@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="login.css">
+        
+    </head>
+
+<body> 
+   
+    <div class="main">
+        <input type="checkbox" id="chk" aria-hidden="true">
+        <!--signup form here-->
+        <div class="signup">
+            <form action="user1.php" method="post">
+                <label for="chk" aria-hidden="true">SIGNUP</label>
+                <input type="text" name="name" placeholder="NAME" required="">
+                <input type="email" name="email" placeholder="EMAIL" required="">
+                <input type="password" name="password" placeholder="PASSWORD" required="">
+                
+                <button type="submit" value="submit"> SIGN UP</button>
+                
+
+            </form>
+        </div>
+        <!--registration form-->
+        <div class="login">
+            <form  action="user.php" method="post">
+                <label for="chk" aria-hidden="true">LOGIN</label>
+                <input type="text" name="name" placeholder="NAME" required="">
+                
+                <input type="password" name="password" placeholder="PASSWORD" required="">
+                
+                <input id="btn" type="submit" name="submit" value="Submit" style="padding: 5px;"/>
+                
+                
+
+            </form>
+        </div>
+    </div>
+    
+    
+</body>
+ </html>   

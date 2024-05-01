@@ -1,0 +1,131 @@
+
+<html> 
+ <head> 
+  <title>Store Your Goods</title> 
+
+  <style> 
+  body{
+    background: linear-gradient(rgba(0,0,0,0.5),#009682),url(PDS-LS-03_1600x.jpg);
+        background-size: 100% 100%;
+        background-position: center;
+        position: absolute;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        left: 300px;
+        }
+   form { 
+    max-width: 600px; 
+    margin: 0 auto; 
+    padding: 20px;
+    border: 1px solid #009682; 
+    border-radius: 10px; 
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; 
+    background-color: #009682; 
+    box-shadow: 0px 10px 20px #009682; 
+    font-size: 20px; 
+    right: 200px;
+
+
+   } 
+    
+   h1 { 
+    text-align: center; 
+    font-size: 2em; 
+    color: peachpuff; 
+    margin-bottom: 20px; 
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.8); 
+   } 
+ 
+   label { 
+    display: block; 
+    margin-bottom: 5px; 
+    font-weight: bold; 
+    color: #333; 
+   } 
+ 
+   input[type="text"], 
+   input[type="email"], 
+   input[type="tel"], 
+   select, 
+   textarea { 
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-sizing: border-box; 
+    margin-bottom: 10px; 
+    font-size: 1em; 
+    color: #333; 
+    background-color: #fff; 
+    transition: box-shadow 0.2s ease-in-out; 
+   } 
+ 
+   input[type="text"]:focus, 
+   input[type="email"]:focus, 
+   input[type="tel"]:focus, 
+   select:focus, 
+   textarea:focus { 
+    outline: none; 
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); 
+   } 
+ 
+   select { 
+    appearance: none; 
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath fill='%23333' d='M0 0l6 8 6-8H0z'/%3E%3C/svg%3E"); 
+    background-repeat: no-repeat; 
+    background-size: 12px 8px; 
+    background-position: right center; 
+   } 
+ 
+   textarea { 
+    resize: vertical; 
+   } 
+ 
+   button[type="submit"] { 
+    display: block; 
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    background-color: #333; 
+    color: #fff; 
+    border: none; 
+    border-radius: 5px; 
+    font-size: 1.2em; 
+    cursor: pointer; 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.2s ease-in-out, 
+     box-shadow 0.2s ease-in-out; 
+   } 
+ 
+   button[type="submit"]:hover { 
+    background-color: #555; 
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3); 
+   } 
+  </style> 
+ </head> 
+ <body> 
+  <form action="query.php" method="post"> 
+   <h1 style="font-family: 'Times New Roman', Times, serif;font: size 24px;">QUERY SUBMIT FORM</h1> <br> 
+ 
+   <label for="customer-name"> Name:</label> 
+   <input type="text" id="customer-name" name="customer-name" required /> 
+ 
+   <label for="customer-email"> Email:</label> 
+   <input type="email" id="company-email" name="company-email" required /> 
+ 
+   <label for="contact-number"> Number:</label> 
+   <input type="tel" id="contact-number" name="contact-number" required />
+   <label for="query-details">QUERY:</label>
+   <textarea 
+    id="query-details" 
+    name="query-details" 
+    rows="5" 
+    required 
+   ></textarea> 
+   <label for="query-form">QUERY FROM:</label>
+   <input type="text" id="query-form" name="query-form" required/>
+    <button type="submit">Submit</button> 
+  </form> 
+ </body>
+</html>

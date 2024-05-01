@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPage</title>
+    <style>
+        * {
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 150px;
+            background-color: rgb(76, 242, 98);
+            font-size: 40px;
+        }
+        .links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 50px;
+        }
+        .form {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            position: relative;
+        }
+        .form img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+        }
+        .form .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            opacity: 0;
+            transition: opacity 0.5s;
+        }
+        .form:hover .overlay {
+            opacity: 1;
+        }
+        .form .overlay span {
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .links {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome to The Admin Page</h1>
+    </div>
+    <div class="links">
+        <div class="form">
+            <a href="adminPage.php">
+                <img src="special product.jpg" alt="goodsStorage">
+                <div class="overlay">
+                    <span>ORDERS DETAILS</span>
+                </div>
+            </a>
+        </div>
+        <div class="form">
+            <a href="querydetails.php">
+                <img src="roundplate.jpg" alt="goodsDelivery">
+                <div class="overlay">
+                    <span>QUERY DETAILS</span>
+                </div>
+            </a>
+        </div>
+        <div class="form">
+            <a href="accepted.php">
+                <img src="special product.jpg" alt="goodsStorage">
+                <div class="overlay">
+                    <span>ACCEPTED QUERY DETAILS</span>
+                </div>
+            </a>
+        </div>
+        <div class="form">
+            <a href="rejected.php">
+                <img src="roundplate.jpg" alt="goodsDelivery">
+                <div class="overlay">
+                    <span>REJECTED QUERY DETAILS</span>
+                </div>
+            </a>
+        </div>
+        
+    </div>
+</body>
+</html>
